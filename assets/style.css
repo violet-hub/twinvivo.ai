@@ -1,0 +1,108 @@
+:root {
+  --color-bg: #F6F6F6;
+  --color-text: #212121;
+  --color-accent: #9BDAFE;
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Manrope', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+a { color: var(--color-accent); text-decoration: none; }
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+nav ul { display: flex; gap: 1.5rem; list-style: none; }
+nav li a:hover { color: var(--color-text); }
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 800px;
+  z-index: 1;
+}
+.hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.feature-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 2rem;
+  text-align: center;
+}
+.feature-card h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.75rem;
+}
+/* Placeholder styles for embeds */
+#model-viewer, #network-graph {
+  height: 400px;
+  margin-bottom: 2rem;
+  background: #e0e0e0;
+  border-radius: 0.75rem;
+}
+footer {
+  background: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+}
