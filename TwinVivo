@@ -1,0 +1,55 @@
+## TwinVivo
+![image](https://github.com/user-attachments/assets/0d82db4a-a8f3-428d-8d3a-4e8e24afbcd9)
+
+## AI Drug Discovery
+
+AI-powered synthetic twin platform for simulating preclinical trials.
+
+### 🎯 Problem
+What do we do? TwinVivo is AI powered drug discovery tool that allows researchers to simulate the effects of drugs before going into preclinical trials.Today, drug companies spend up to 70% of their R&D budget on clinical trials, only to see 90% of candidates fail. We’re flipping that script with a platform that uses AI (like MIT’s open-source Boltz-2 model) to simulate how a drug interacts at the molecular level, all the way up to a virtual body of an organism (mice). Think of it as a flight simulator for drug trials: pharma R&D teams can input a potential drug and instantly observe its predicted efficacy and side effects before committing to costly animal studies. We can screen out toxic or ineffective compounds in weeks instead of years, drastically cutting the time and cost to bring a new drug to market. Beyond cost savings, we reduce the need for animal testing and make human trials safer by only moving forward with the most promising drugs. In a world where bringing a single new drug to market can cost over $1 billion, our solution can save companies hundreds of millions and get life-saving therapies to patients faster.
+
+How far along are we? Iterating on an MVP.
+
+Are people using your product? We are interviewing potential users and stakeholders to understand the most persistent problems in taking a drug candidate into preclinical trials and engineering required features for the synthetic twin solution.
+
+Do you have revenue? No.
+
+### Features
+
+- Dashboard 
+
+### Getting Started
+## Frontend Setup
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to the local server URL
+
+### Project Structure
+
+- `src/components`: React components
+- `src/types`: TypeScript type definitions
+- `src/data`: Mock data
+- `src/hooks`: Custom React hooks
+
+### Technologies Used
+
+- React
+- TypeScript
+
+## Backend setup
+
+Please refer to `backend/README.md`
+
+---
+
+Feel free to submit issues and pull requests.
